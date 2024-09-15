@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML, CSS, and JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Learn HTML, CSS, and JavaScript</h1>
+      <nav>
+        <ul>
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="grid-container">
+      <section id="html" class="grid-item">
+        <h2>Introduction to HTML</h2>
+        <p>
+          HTML (HyperText Markup Language) is the standard markup language for
+          creating web pages.
+        </p>
+        <h3>Basic Structure</h3>
+        <pre><code class="language-html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Title of the document&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        Content of the document
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre>
+        <button class="example-btn" data-modal="html-modal">
+          Show HTML Example
+        </button>
+        <a
+          href="https://www.w3schools.com/html/default.asp"
+          target="_blank"
+          class="example-link"
+          >Learn more about HTML on W3Schools</a
+        >
+      </section>
+
+      <section id="css" class="grid-item">
+        <h2>Introduction to CSS</h2>
+        <p>
+          CSS (Cascading Style Sheets) is used to style and layout web pages.
+        </p>
+        <h3>Basic Syntax</h3>
+        <pre><code class="language-css">
+                body {
+                    background-color: lightblue;
+                    font-family: Arial, sans-serif;
+                }
+            </code></pre>
+        <button class="example-btn" data-modal="css-modal">
+          Show CSS Example
+        </button>
+        <a
+          href="https://www.w3schools.com/css/default.asp"
+          target="_blank"
+          class="example-link"
+          >Learn more about CSS on W3Schools</a
+        >
+      </section>
+
+      <section id="javascript" class="grid-item">
+        <h2>Introduction to JavaScript</h2>
+        <p>
+          JavaScript is a programming language used to make web pages
+          interactive.
+        </p>
+        <h3>Basic Example</h3>
+        <pre><code class="language-javascript">
+                document.querySelector('button').addEventListener('click', function() {
+                    alert('Hello, world!');
+                });
+            </code></pre>
+        <button id="js-example-btn">Show JavaScript Example</button>
+        <a
+          href="https://www.w3schools.com/js/default.asp"
+          target="_blank"
+          class="example-link"
+          >Learn more about JavaScript on W3Schools</a
+        >
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- Modal for HTML Example -->
+    <div id="html-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <pre><code class="language-html">
+                &lt;h1&gt;This is an H1 heading&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            </code></pre>
+      </div>
+    </div>
+
+    <!-- Modal for CSS Example -->
+    <div id="css-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <pre><code class="language-css">
+                body {
+                    background-color: lightgreen;
+                }
+                h1 {
+                    color: blue;
+                }
+            </code></pre>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
